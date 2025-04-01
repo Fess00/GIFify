@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using GIFify.ViewModels;
+using GIFify.ViewModels.Base;
 using System;
 
 namespace GIFify
