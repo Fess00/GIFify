@@ -12,22 +12,21 @@
 	<Grid>
 		<!--GRID DEFINITION-->
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"></ColumnDefinition>
-			<ColumnDefinition Width="*"></ColumnDefinition>
-			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="*"></RowDefinition>
-			<RowDefinition Height="*"></RowDefinition>
-			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
 	    <Button Grid.Column="2" Grid.Row="2" 
 	            Background="BurlyWood"
 				HorizontalAlignment="Center"
 				VerticalAlignment="Center"
 				Content="{Binding TemplateButtonContent}"
-				Command="{Binding TemplateButtonCommand}"></Button>
-		
+				Command="{Binding TemplateButtonCommand}"/>
 	</Grid>
     
 </Window>
