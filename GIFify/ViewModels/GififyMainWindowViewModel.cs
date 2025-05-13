@@ -2,23 +2,30 @@
 using GIFify.ViewModels.Base;
 using ReactiveUI;
 using System.Windows.Input;
-using Tmds.DBus.Protocol;
 
 namespace GIFify.ViewModels
 {
     public class GififyMainWindowViewModel : ViewModelBase
     {
+        private string _templateButtonContent;
+        
         public string Title { get; init; }
+        public ICommand TemplateButtonCommand { get; }
 
-        public ICommand Template { get; }
+        public string TemplateButtonContent
+        {
+            get => _templateButtonContent;
+            private set => this.RaiseAndSetIfChanged(ref _templateButtonContent, value);
+        }
 
         public GififyMainWindowViewModel()
         {
             Title = "GIFify";
+            TemplateButtonContent = "Template";
 
-            Template = ReactiveCommand.Create(() =>
+            TemplateButtonCommand = ReactiveCommand.Create(() =>
             {
-                
+                TemplateButtonContent = "New Template";;
             });
         }
     }
