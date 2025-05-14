@@ -25,7 +25,7 @@ namespace GIFify.ViewModels
 
             TemplateButtonCommand = ReactiveCommand.Create(() =>
             {
-                TemplateButtonContent = "New Template";;
+                TemplateButtonContent = "New Template";
             });
         }
     }
