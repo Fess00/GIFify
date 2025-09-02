@@ -6,7 +6,27 @@
         x:DataType="vm:GififyMainWindowViewModel"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="GIFify.Views.GififyMainWindow"
+        Background="White"
         Title="{Binding Title}">
 
+	<Grid>
+		<!--GRID DEFINITION-->
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+	    <Button Grid.Column="2" Grid.Row="2" 
+	            Background="BurlyWood"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Content="{Binding TemplateButtonContent}"
+				Command="{Binding TemplateButtonCommand}"/>
+	</Grid>
     
 </Window>
